@@ -19,17 +19,18 @@ Untuk mengakses API, silahkan ketikan `http://localhost:5000/path url` pada url 
 > Method: POST
 
 > Body Request: 
-                
-                {
-                  "name": string,
-                  "year": number,
-                  "author": string,
-                  "summary": string,
-                  "publisher": string,
-                  "pageCount": number,
-                  "readPage": number,
-                  "reading": boolean
-                }
+  ```       
+      {
+        "name": string,
+        "year": number,
+        "author": string,
+        "summary": string,
+        "publisher": string,
+        "pageCount": number,
+        "readPage": number,
+        "reading": boolean
+      }
+  ```
 
 Body Request dikirimkan dalam format JSON, pada Postman dikirimkan pada Body > raw dengan type data JSON.
 
@@ -52,3 +53,10 @@ Body Request dikirimkan dalam format JSON, pada Postman dikirimkan pada Body > r
 > Path Url: /books/{bookId}
 
 > Method: DELETE
+
+### ***Mencari data berdasarkan query parameter***
+> Query Parameter: name, reading, finished 
+
+> Path Url: /books?nama query parameter
+
+> Method: GET
